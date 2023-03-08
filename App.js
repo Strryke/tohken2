@@ -1,16 +1,17 @@
-import React from "react";
-import AppNavigator from "./src/navigation/AppNavigator";
-import { AuthProvider } from "./src/provider/AuthProvider";
-import { ThemeProvider } from "react-native-rapi-ui";
-import { LogBox } from "react-native";
+import React from 'react';
+import AppNavigator from './src/navigation/AppNavigator';
+import { AuthProvider } from './src/provider/AuthProvider';
+import { ThemeProvider } from 'react-native-rapi-ui';
+import { LogBox } from 'react-native';
+import { Box, NativeBaseProvider } from 'native-base';
 
 export default function App() {
   const images = [
-    require("./assets/icon.png"),
-    require("./assets/splash.png"),
-    require("./assets/login.png"),
-    require("./assets/register.png"),
-    require("./assets/forget.png"),
+    require('./assets/icon.png'),
+    require('./assets/splash.png'),
+    require('./assets/login.png'),
+    require('./assets/register.png'),
+    require('./assets/forget.png'),
   ];
 
   // Ignore firebase v9 AsyncStorage warning
@@ -21,10 +22,12 @@ export default function App() {
   }, []);
 
   return (
-    <ThemeProvider images={images}>
-      <AuthProvider>
-        <AppNavigator />
-      </AuthProvider>
-    </ThemeProvider>
+    <NativeBaseProvider>
+      <ThemeProvider images={images}>
+        <AuthProvider>
+          <AppNavigator />
+        </AuthProvider>
+      </ThemeProvider>
+    </NativeBaseProvider>
   );
 }
