@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664939970889",
+    "project_id": "tohk-e0b70",
+    "storage_bucket": "tohk-e0b70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664939970889:android:6bc9953a4a5834ea405a98",
+        "android_client_info": {
+          "package_name": "com.tohken.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664939970889-nk7ogesvtjvcggrsicf1ub573u50dctq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPxurUhDHdelcHz5ZdSNjlQ_3yHj2dvh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664939970889-nk7ogesvtjvcggrsicf1ub573u50dctq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
